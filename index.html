@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>檸檬草美食茶房 LEMON GRASS FOOD & TEA｜新莊輔大美食・複合式茶餐首選</title>
+  
+  <!-- SEO Meta Tags (PPT 09 規範) -->
+  <meta name="description" content="檸檬草美食茶房官方網站。嚴選天然香草、招牌香茅養生鍋、酥脆泰式椒麻雞腿飯、明太子海鮮義大利麵與現萃翡翠檸檬綠茶。門市地址位於242新北市新莊區福營里中正路571號（近捷運輔大站），提供聚餐、學生與上班族舒適寬敞用餐環境。提供即時線上菜單價格、詳細餐點介紹與一鍵導航。">
+  <meta name="keywords" content="檸檬草美食茶房, 新莊美食, 輔大美食, 新莊聚餐, 新莊簡餐, 義大利麵, 養生火鍋, 複合式茶飲, 輔大餐廳, 椒麻雞飯, 中正路571號">
+  <meta name="author" content="檸檬草美食茶房 LEMON GRASS">
+  
+  <!-- Open Graph / 社群分享標籤 -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="檸檬草美食茶房 LEMON GRASS FOOD & TEA">
+  <meta property="og:description" content="讓每一次搜尋，都成為走進店裡的開始。探索完整分類菜單、特色鍋物、炸物小點與捷運到店導航。門市地址：242新北市新莊區福營里中正路571號。">
+  <meta property="og:image" content="images/hero-cover.jpg">
+  
+  <!-- Google Fonts 質感字型 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- 樣式表 -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Schema.org Restaurant 結構化資料 (PPT 09 規範) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "檸檬草美食茶房 LEMON GRASS FOOD & TEA",
+    "image": [
+      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "priceRange": "$$ (NT$ 80 - NT$ 320)",
+    "servesCuisine": ["台式料理", "複合式茶飲", "義大利麵", "火鍋", "炸物輕食"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "中正路571號",
+      "addressLocality": "新莊區福營里",
+      "addressRegion": "新北市",
+      "postalCode": "242",
+      "addressCountry": "TW"
+    },
+    "telephone": "+886-2-2903-5188",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "10:00",
+        "closes": "06:00"
+      }
+    ],
+    "menu": "#menu"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- 即時營業狀態通知橫條 (PPT 03 核心痛點解決方案) -->
+  <div class="announcement-bar">
+    <div class="status-badge" id="currentStatusBadge">
+      <span class="status-dot"></span>
+      <span>今日營業中 (10:00 - 凌晨 06:00)</span>
+    </div>
+    <span>🌱 新莊輔大商圈首選複合茶房（門市地址：242 新北市新莊區福營里中正路 571 號）｜全天候供應精緻定食、義大利麵、暖心鍋物與現萃茶飲</span>
+  </div>
+
+  <!-- 頂部導覽列 Header (PPT 06 響應式規範) -->
+  <header class="site-header">
+    <div class="container header-container">
+      <!-- 品牌 LOGO -->
+      <a href="#home" class="logo-link" aria-label="檸檬草美食茶房 首頁">
+        <div class="logo-icon">🌿</div>
+        <div class="logo-text-wrap">
+          <span class="logo-title">檸檬草美食茶房</span>
+          <span class="logo-subtitle">Lemon Grass Food & Tea</span>
+        </div>
+      </a>
+
+      <!-- 桌面端導覽列 (1440px 體驗) -->
+      <nav class="desktop-nav" aria-label="主要導覽">
+        <a href="#home" class="nav-link active">首頁 Home</a>
+        <a href="#about" class="nav-link">品牌特色 About</a>
+        <a href="#menu" class="nav-link">餐點介紹 Menu</a>
+        <a href="#ambiance" class="nav-link">店內環境 Space</a>
+        <a href="#news" class="nav-link">最新消息 News</a>
+        <a href="#location" class="nav-link">餐廳位置 Location</a>
+      </nav>
+
+      <!-- 桌面端 CTA 行動按鈕 -->
+      <div class="nav-actions">
+        <a href="tel:0229035188" class="btn btn-secondary btn-sm">
+          <span>📞</span> 02-2903-5188
+        </a>
+        <a href="#location" class="btn btn-primary btn-sm">
+          <span>📍</span> 餐廳位置與導航
+        </a>
+      </div>
+
+      <!-- 手機端漢堡按鈕 (390px 體驗) -->
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="切換導覽選單" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- 手機版滑出抽屜導覽 (Mobile Drawer) -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link"><span>🏠 首頁 Home</span> <span>→</span></a></li>
+        <li><a href="#about" class="mobile-nav-link"><span>🌿 品牌故事與特色</span> <span>→</span></a></li>
+        <li><a href="#menu" class="mobile-nav-link"><span>🍽️ 餐點全介紹與價目</span> <span>→</span></a></li>
+        <li><a href="#ambiance" class="mobile-nav-link"><span>🛋️ 用餐環境與空間</span> <span>→</span></a></li>
+        <li><a href="#news" class="mobile-nav-link"><span>📢 門市優惠與消息</span> <span>→</span></a></li>
+        <li><a href="#location" class="mobile-nav-link"><span>📍 餐廳位置（福營里中正路571號）</span> <span>→</span></a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <a href="#location" class="btn btn-primary" style="width: 100%;">
+          <span>📍</span> 前往門市位置與導航
+        </a>
+        <a href="tel:0229035188" class="btn btn-secondary" style="width: 100%;">
+          <span>📞</span> 致電門市專線 (02-2903-5188)
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================
+         01 / 首頁主視覺區塊 (Hero Section)
+         ========================================================= -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span>✨</span> 自然・溫暖・清新・舒適的慢活時光
+          </div>
+          <h1 class="hero-title">
+            讓每一次搜尋，<br>
+            都成為走進<span class="highlight">檸檬草</span>的開始。
+          </h1>
+          <p class="hero-desc">
+            專為周邊學生聚餐、上班族活力午餐與家庭歡聚打造的複合式茶房。從大份量香酥椒麻雞腿飯、手熬香茅養生鍋到現點現搾翡翠檸檬綠茶，以嚴選食材與平實價格，溫暖陪伴您的日常食光。
+          </p>
+
+          <!-- 行動呼籲 CTA (符合使用者動線 01->02->03) -->
+          <div class="hero-cta-group">
+            <a href="#menu" class="btn btn-primary">
+              <span>🍽️</span> 查看全部餐點介紹
+            </a>
+            <a href="#location" class="btn btn-secondary">
+              <span>📍</span> 餐廳位置與導航
+            </a>
+          </div>
+
+          <!-- 亮點指標數據 (PPT 04 成效指標對應體驗) -->
+          <div class="hero-features-list">
+            <div class="feature-mini-item">
+              <span class="feature-mini-num">20+</span>
+              <span class="feature-mini-label">多元手作豐富餐點</span>
+            </div>
+            <div class="feature-mini-item">
+              <span class="feature-mini-num">100%</span>
+              <span class="feature-mini-label">天然原片台灣高山茶</span>
+            </div>
+            <div class="feature-mini-item">
+              <span class="feature-mini-num">2 分鐘</span>
+              <span class="feature-mini-label">近捷運輔大站 1 號出口</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero 右側形象視覺卡片 -->
+        <div class="hero-image-card">
+          <div class="hero-img-wrapper">
+            <img src="images/hero-cover.jpg" 
+                 alt="檸檬草美食茶房溫馨明亮的用餐環境與沙發座位區" />
+          </div>
+          <!-- 懸浮徽章 -->
+          <div class="hero-floating-card">
+            <div class="floating-icon">🍋</div>
+            <div>
+              <div class="floating-text-title">招牌翡翠檸檬綠</div>
+              <div class="floating-text-sub">屏東鮮採九如檸檬 × 茉香原片</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         02 / 品牌故事與目標客群受眾 (About & Audience Persona)
+         ========================================================= -->
+    <section class="brand-intro-section" id="about">
+      <div class="container">
+        <!-- 品牌故事 -->
+        <div class="brand-story-grid">
+          <div class="brand-story-img">
+            <img src="images/brand-entrance.jpg" 
+                 alt="檸檬草美食茶房門市正門迎賓入口與綠意植栽空間" />
+          </div>
+          <div class="brand-story-content">
+            <span class="section-tag">About Lemon Grass</span>
+            <h3>以一杯茶的清香，淬鍊一整天的溫暖日常</h3>
+            <p>
+              「檸檬草美食茶房」發跡於新莊輔大商圈（242 新北市新莊區福營里中正路 571 號），秉持著「自然・溫暖・清新・舒適」的核心初心。我們深信，好的餐飲不僅是填飽肚子，更是一段能夠卸下生活疲憊、與好友侃侃而談的珍貴時光。
+            </p>
+            <p>
+              廚房裡堅持手作現熬天然高湯、不用化學香料；吧檯前嚴選台灣名間與阿里山高山茶葉，以純糖調配杯杯現點現搖的芳醇茶飲。無論是一個人享受靜謐閱讀，還是十幾位好友的歡樂慶生聚會，檸檬草始終為您留一盞溫暖的燈火。
+            </p>
+            <div style="display: flex; gap: 16px; margin-top: 24px;">
+              <div style="background-color: var(--color-surface-green); padding: 12px 18px; border-radius: var(--radius-sm); border-left: 4px solid var(--color-primary-green);">
+                <strong style="color: var(--color-primary-green-dark); font-size: 0.95rem;">舒適寬敞座席</strong>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted); margin: 0;">提供免費 Wi-Fi、充足插座與大桌聚餐空間</p>
+              </div>
+              <div style="background-color: var(--color-surface-green); padding: 12px 18px; border-radius: var(--radius-sm); border-left: 4px solid var(--color-warm-orange);">
+                <strong style="color: var(--color-warm-orange); font-size: 0.95rem;">透明平實定價</strong>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted); margin: 0;">餐點均附豐富配菜與熱湯，無額外隱藏服務費</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PPT 02 目標客群受眾畫像與對策 (Audience Persona) -->
+        <div class="section-header">
+          <span class="section-tag">Target Audience</span>
+          <h2 class="section-title">貼近每位客人的貼心用餐設計</h2>
+          <p class="section-desc">深入分析三大核心族群的用餐情境與痛點，提供最精準周到的服務體驗。</p>
+        </div>
+
+        <div class="persona-cards-grid">
+          <!-- A 周邊學生 -->
+          <div class="persona-card">
+            <span class="persona-badge">Persona A ｜ 周邊學生</span>
+            <h3 class="persona-title">課後聚餐與小組討論</h3>
+            <p class="persona-info-item"><strong>年齡區間：</strong>18 – 24 歲（輔大及周邊校園）</p>
+            <p class="persona-info-item"><strong>核心需求：</strong>快速瀏覽菜單、預算價格比較、多人併桌大空間</p>
+            <div class="persona-solution">
+              💡 <strong>專屬對策：</strong>完整分類線上菜單、超高 CP 值大份量定食、炸物拼盤輕鬆分享、附設免費高速 Wi-Fi 與插座。
+            </div>
+          </div>
+
+          <!-- B 上班族 -->
+          <div class="persona-card">
+            <span class="persona-badge">Persona B ｜ 附近上班族</span>
+            <h3 class="persona-title">午餐補給與下班放鬆</h3>
+            <p class="persona-info-item"><strong>年齡區間：</strong>25 – 35 歲（新莊及周邊商辦園區）</p>
+            <p class="persona-info-item"><strong>核心需求：</strong>快速確認營業時間、出餐效率、健康低負擔</p>
+            <div class="persona-solution">
+              💡 <strong>專屬對策：</strong>首頁即時顯示營業狀態、精選養生香茅鍋物與無糖冷泡原茶、支援電話外帶自取。
+            </div>
+          </div>
+
+          <!-- C 朋友／家庭客 -->
+          <div class="persona-card">
+            <span class="persona-badge">Persona C ｜ 朋友／家庭客</span>
+            <h3 class="persona-title">假日聚會與多人用餐</h3>
+            <p class="persona-info-item"><strong>年齡區間：</strong>20 – 45 歲（在地家庭、親朋好友）</p>
+            <p class="persona-info-item"><strong>核心需求：</strong>環境寬敞整潔、老少咸宜多元菜系、交通方便</p>
+            <div class="persona-solution">
+              💡 <strong>專屬對策：</strong>清晰透明的環境照片、飯/麵/火鍋/兒童友善茶點一應俱全、詳細捷運與停車場指引。
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         03 / 菜單介紹與餐點詳細介紹 (Core Menu Section - 重點介紹每一個餐點)
+         ========================================================= -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Our Delicious Menu</span>
+          <h2 class="section-title">嚴選餐點全品項介紹</h2>
+          <p class="section-desc">
+            每道料理均由主廚精心調配烹煮，點選任一餐點卡片即可查看詳細嚴選食材、風味工法及推薦搭配茶飲！
+          </p>
+        </div>
+
+        <!-- 搜尋列與分類切換 -->
+        <div class="menu-toolbar">
+          <div class="menu-search-wrapper">
+            <span class="menu-search-icon">🔍</span>
+            <input 
+              type="text" 
+              id="menuSearchInput" 
+              class="menu-search-input" 
+              placeholder="搜尋餐點名稱、食材（如：椒麻雞、牛肉、義大利麵、綠茶...）"
+              aria-label="搜尋餐點"
+            />
+          </div>
+
+          <!-- 分類標籤 (由 JS 動態產生，支援切換) -->
+          <div class="category-tabs" id="categoryTabs" role="tablist">
+            <!-- JS 動態插入 -->
+          </div>
+        </div>
+
+        <!-- 餐點卡片容器 (JS 動態渲染) -->
+        <div class="menu-grid" id="menuGrid">
+          <!-- JS 動態插入各餐點卡片 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         04 / 店內環境介紹 (Ambiance & Space)
+         ========================================================= -->
+    <section class="ambiance-section" id="ambiance">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Dining Environment</span>
+          <h2 class="section-title">溫暖自然的慢活空間</h2>
+          <p class="section-desc">
+            挑高明亮的大片採光、綠意盎然的香草植栽與舒適沙發座位，為您打造沉澱身心的美好時刻。
+          </p>
+        </div>
+
+        <div class="ambiance-gallery-grid">
+          <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=700&q=80" alt="陽光灑落的窗邊沙發座位區" loading="lazy">
+            <div class="gallery-card-overlay">
+              <span class="gallery-title">日光落地窗座位</span>
+              <span class="gallery-desc">午後自然採光，適合一人閱讀與品茗</span>
+            </div>
+          </div>
+          <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=700&q=80" alt="多人聚餐與同學長桌區" loading="lazy">
+            <div class="gallery-card-overlay">
+              <span class="gallery-title">多人歡聚長桌區</span>
+              <span class="gallery-desc">可容納 8–16 人，社團活動與聚餐優選</span>
+            </div>
+          </div>
+          <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=700&q=80" alt="綠意植栽與木質文青卡座" loading="lazy">
+            <div class="gallery-card-overlay">
+              <span class="gallery-title">綠植木質沙發卡座</span>
+              <span class="gallery-desc">保有良好私密感，三五好友自在暢聊</span>
+            </div>
+          </div>
+          <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=700&q=80" alt="手作茶飲現萃吧檯" loading="lazy">
+            <div class="gallery-card-overlay">
+              <span class="gallery-title">現淬手作茶飲吧檯</span>
+              <span class="gallery-desc">開放式吧檯，看得見的衛生與茶香堅持</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         05 / 最新消息與優惠活動 (News & Promotions)
+         ========================================================= -->
+    <section class="news-section" id="news">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Latest News & Events</span>
+          <h2 class="section-title">門市最新消息與優惠活動</h2>
+          <p class="section-desc">把握專屬優惠，隨時享受美食與茶香的暖心犒賞！</p>
+        </div>
+
+        <div class="news-grid">
+          <article class="news-card">
+            <span class="news-date">📅 2026/11/05 更新</span>
+            <span class="news-badge">學生專屬優惠</span>
+            <h3 class="news-title">憑學生證享主餐全面 9 折加贈特選紅茶</h3>
+            <p class="news-desc">凡輔仁大學及大專院校學生，平日週一至週五憑有效學生證內用任一主餐，即享結帳 9 折優惠，並免費升級招牌飲品！</p>
+          </article>
+
+          <article class="news-card">
+            <span class="news-date">📅 2026/11/01 更新</span>
+            <span class="news-badge">季節限定新品</span>
+            <h3 class="news-title">秋季暖心「香茅養生鍋物節」溫潤登場</h3>
+            <p class="news-desc">採用自種新鮮檸檬香茅與埔里紅棗慢火精燉，點鍋即贈「古早味現炸手作豆腐」一份，暖胃滋補不油膩，每日限量供應。</p>
+          </article>
+
+          <article class="news-card">
+            <span class="news-date">📅 2026/10/28 更新</span>
+            <span class="news-badge">平日午間限定</span>
+            <h3 class="news-title">上班族活力商業午餐！外帶自取享 85 折</h3>
+            <p class="news-desc">週一至週五 11:30–14:00 期間，來電外帶自取主廚特餐享 85 折優惠，免久候快速取餐，為下午注入滿滿元氣！</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         06 / 餐廳位置與交通資訊 (Location & Map - 正式地址規範)
+         ========================================================= -->
+    <section class="location-section" id="location">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Find Us & Directions</span>
+          <h2 class="section-title">餐廳位置與到店指南</h2>
+          <p class="section-desc">
+            位於新莊輔大商圈核心地段，中正路正熱鬧街區，交通四通八達，無論搭乘捷運、公車或自行開車前往均極為便利。
+          </p>
+        </div>
+
+        <div class="location-grid">
+          <!-- 左側：詳細資訊與到店方式說明 -->
+          <div class="location-info-wrapper">
+            <div class="location-header-card">
+              <h3 class="location-brand-name">檸檬草美食茶房（新莊輔大門市）</h3>
+              <div class="location-address-highlight">
+                📍 242 新北市新莊區福營里中正路 571 號
+              </div>
+              <p style="color: var(--color-text-muted); font-size: 0.95rem;">
+                （位於輔仁大學正門斜對面中正路上，鄰近捷運輔大站 1 號及 2 號出口）
+              </p>
+              <div class="location-status-row">
+                <span style="font-size: 0.9rem; font-weight: 700; color: var(--color-primary-green-dark);">
+                  ⏰ 營業時間：週一至週日 10:00 – 凌晨 06:00（全天候供應，深夜熱食不打烊）
+                </span>
+              </div>
+            </div>
+
+            <!-- 詳細交通指南清單 (PPT 03 核心痛點明確解答) -->
+            <div class="location-items-list">
+              <!-- 門市地址 -->
+              <div class="location-detail-item">
+                <div class="location-detail-icon">📍</div>
+                <div class="location-detail-content">
+                  <h4>門市詳細地址</h4>
+                  <p><strong>242 新北市新莊區福營里中正路 571 號</strong></p>
+                </div>
+              </div>
+
+              <!-- 捷運 -->
+              <div class="location-detail-item">
+                <div class="location-detail-icon">🚇</div>
+                <div class="location-detail-content">
+                  <h4>台北捷運（MRT）路線</h4>
+                  <p>搭乘中和新蘆線至<strong>【輔大站】1 號或 2 號出口</strong>出站，沿中正路直行步行約 2 分鐘即可抵達（242 新北市新莊區福營里中正路 571 號，步行約 150 公尺）。</p>
+                </div>
+              </div>
+
+              <!-- 公車 -->
+              <div class="location-detail-item">
+                <div class="location-detail-icon">🚌</div>
+                <div class="location-detail-content">
+                  <h4>公車路線指引</h4>
+                  <p>搭乘 <strong>111、235、299、513、635、636、637、802、藍2</strong> 等線路公車至「<strong>輔仁大學站</strong>」下車，過馬路步行 1 分鐘即達門市。</p>
+                </div>
+              </div>
+
+              <!-- 開車與停車場 -->
+              <div class="location-detail-item">
+                <div class="location-detail-icon">🚗</div>
+                <div class="location-detail-content">
+                  <h4>自行開車／周邊收費停車場</h4>
+                  <p>
+                    1. <strong>輔仁大學校內訪客收費停車場</strong>（平日每小時 $30，步行約 3 分鐘）<br>
+                    2. <strong>中正路周邊公有/私有平面停車場</strong>（步行約 2–4 分鐘）
+                  </p>
+                </div>
+              </div>
+
+              <!-- 門市聯絡電話 -->
+              <div class="location-detail-item">
+                <div class="location-detail-icon">📞</div>
+                <div class="location-detail-content">
+                  <h4>門市服務專線</h4>
+                  <p><strong>02-2903-5188</strong>（內用採現場候位入座；歡迎來電外帶自取點餐）</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 核心到店導流按鈕組 -->
+            <div class="location-action-buttons">
+              <!-- 一鍵開啟 Google Maps 導航 -->
+              <a href="https://maps.google.com/?q=242新北市新莊區福營里中正路571號" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <span>🧭</span> 一鍵 Google 地圖導航
+              </a>
+              <!-- 一鍵撥打電話 -->
+              <a href="tel:0229035188" class="btn btn-secondary">
+                <span>📞</span> 一鍵撥打門市電話
+              </a>
+            </div>
+          </div>
+
+          <!-- 右側：地圖嵌入視窗 (視覺化餐廳位置) -->
+          <div class="map-container-wrapper">
+            <span class="map-overlay-badge">
+              <span>📍</span> 檸檬草美食茶房（福營里中正路571號）
+            </span>
+            <!-- 嵌入 Google Maps (精確座標位置) -->
+            <iframe 
+              title="檸檬草美食茶房 餐廳位置地圖"
+              src="https://maps.google.com/maps?q=242新北市新莊區福營里中正路571號&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+              loading="lazy" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       頁尾 Footer (PPT 05, 08, 09 資訊整合與 SEO 規範)
+       ========================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <!-- 品牌介紹 -->
+      <div class="footer-brand">
+        <h4>檸檬草美食茶房</h4>
+        <p>
+          讓每一次搜尋，都成為走進店裡的開始。秉持「自然・溫暖・清新・舒適」的經營哲學，為新莊與輔大朋友獻上熱騰騰的現炒定食與甘醇回甘的極品好茶。
+        </p>
+        <!-- 社群平台連結 (PPT 12 社群連結整合) -->
+        <div class="footer-social-group">
+          <a href="https://line.me" target="_blank" rel="noopener noreferrer" class="social-pill-btn" aria-label="加入 LINE 官方帳號">
+            <span class="social-icon">💬</span> LINE 官方帳號
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-pill-btn" aria-label="追蹤 Instagram 官方專頁">
+            <span class="social-icon">📸</span> Instagram
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-pill-btn" aria-label="關注 Facebook 粉絲專頁">
+            <span class="social-icon">👍</span> Facebook
+          </a>
+        </div>
+        <p style="font-size: 0.85rem; color: #8f9b88; margin-top: 16px;">
+          © 2026 檸檬草美食茶房 LEMON GRASS FOOD & TEA. All Rights Reserved.
+        </p>
+      </div>
+
+      <!-- 快速連結 -->
+      <div class="footer-links">
+        <h5>網站導覽</h5>
+        <ul class="footer-links-list">
+          <li class="footer-link-item"><a href="#home">首頁 Home</a></li>
+          <li class="footer-link-item"><a href="#about">品牌故事與客群</a></li>
+          <li class="footer-link-item"><a href="#menu">完整分類菜單價目</a></li>
+          <li class="footer-link-item"><a href="#ambiance">用餐環境與空間</a></li>
+          <li class="footer-link-item"><a href="#news">最新優惠消息</a></li>
+          <li class="footer-link-item"><a href="#location">餐廳位置（福營里中正路571號）</a></li>
+        </ul>
+      </div>
+
+      <!-- 聯絡與營業資訊 -->
+      <div class="footer-contact">
+        <h5>門市聯絡資訊</h5>
+        <div class="footer-contact-item">
+          <span>📍</span>
+          <span>242 新北市新莊區福營里中正路 571 號（捷運輔大站）</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>⏰</span>
+          <span>週一至週日 10:00 – 凌晨 06:00（全天候營業，宵夜熱食供應）</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>📞</span>
+          <span>02-2903-5188</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>✉️</span>
+          <span>service@lemongrass-tea.com.tw</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>本形象網站依據「檸檬草美食茶房官方形象網站規劃提案」建置・支援響應式手機（390px）與桌面（1440px）瀏覽</p>
+    </div>
+  </footer>
+
+  <!-- =========================================================
+       手機版常駐底部快捷浮動列 (Mobile Sticky Action Bar)
+       3 鍵核心佈局：撥號、一鍵導航、瀏覽菜單
+       ========================================================= -->
+  <aside class="mobile-sticky-bar" aria-label="手機端快捷動作">
+    <a href="tel:0229035188" class="mobile-bar-btn" aria-label="撥打門市電話">
+      <span class="icon">📞</span>
+      <span>撥打電話</span>
+    </a>
+    <a href="https://maps.google.com/?q=242新北市新莊區福營里中正路571號" target="_blank" rel="noopener noreferrer" class="mobile-bar-btn highlight" aria-label="開啟Google地圖導航至242新北市新莊區福營里中正路571號">
+      <span class="icon">🧭</span>
+      <span>一鍵導航</span>
+    </a>
+    <a href="#menu" class="mobile-bar-btn" aria-label="查看菜單">
+      <span class="icon">🍽️</span>
+      <span>瀏覽菜單</span>
+    </a>
+  </aside>
+
+  <!-- =========================================================
+       餐點詳情彈窗 Modal (介紹每一個餐點的靈魂細節)
+       ========================================================= -->
+  <div class="modal-overlay" id="foodModalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="food-modal-container">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="關閉餐點詳情視窗">✕</button>
+      
+      <div class="modal-hero-img-wrap">
+        <img src="" alt="" id="modalHeroImg" class="modal-hero-img" />
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-header-info">
+          <div>
+            <h2 id="modalTitle" class="modal-title">餐點名稱</h2>
+            <div id="modalEnTitle" class="modal-en-title">English Dish Name</div>
+          </div>
+          <div class="modal-price-box">
+            <span style="font-size: 1rem; color: var(--color-warm-orange); font-weight: 700;">NT$ </span>
+            <span id="modalPrice" class="modal-price-val">0</span>
+          </div>
+        </div>
+
+        <div class="modal-tags-row" id="modalTagsRow">
+          <!-- 標籤動態注入 -->
+        </div>
+
+        <!-- 詳細風味與烹飪說明 -->
+        <div class="modal-desc-box">
+          <p id="modalFullDesc">詳細風味工法與故事介紹...</p>
+        </div>
+
+        <!-- 嚴選食材細項 -->
+        <div>
+          <h4 class="modal-section-title"><span>🌱</span> 嚴選主要食材</h4>
+          <div class="modal-ingredients-list" id="modalIngredients">
+            <!-- 動態注入食材清單 -->
+          </div>
+        </div>
+
+        <!-- 店長推薦搭配茶飲 -->
+        <div class="modal-pairing-box" id="modalPairing">
+          <!-- 推薦飲品 -->
+        </div>
+
+        <!-- 規格與飲食友善提示 -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 24px;">
+          <div style="background-color: var(--color-bg-rice); padding: 10px 14px; border-radius: var(--radius-sm); border: 1px solid var(--color-border);">
+            <div style="font-size: 0.8rem; color: var(--color-text-light);">🍱 份量與套餐規格</div>
+            <div id="modalServing" style="font-size: 0.9rem; font-weight: 600; color: var(--color-text-main); margin-top: 2px;"></div>
+          </div>
+          <div style="background-color: var(--color-bg-rice); padding: 10px 14px; border-radius: var(--radius-sm); border: 1px solid var(--color-border);">
+            <div style="font-size: 0.8rem; color: var(--color-text-light);">🌶️ 飲食友善／辣度</div>
+            <div id="modalDietary" style="font-size: 0.9rem; font-weight: 600; color: var(--color-text-main); margin-top: 2px;"></div>
+          </div>
+        </div>
+
+        <div class="modal-footer-action">
+          <button type="button" class="btn btn-secondary btn-sm" onclick="document.getElementById('modalCloseBtn').click();">
+            繼續看其他菜色
+          </button>
+          <a href="#location" class="btn btn-primary btn-sm" onclick="document.getElementById('modalCloseBtn').click();">
+            <span>📍</span> 門市位置與導航
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 返回頂部按鈕 -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="回到頁面頂部">
+    ↑
+  </button>
+
+  <!-- 資料庫與腳本 -->
+  <script src="js/menuData.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
